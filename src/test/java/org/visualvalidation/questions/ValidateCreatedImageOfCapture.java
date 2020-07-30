@@ -13,6 +13,7 @@ public class ValidateCreatedImageOfCapture {
     public static void validateElementImageIsSaved(String elementName, String pageName) {
         String elementIdentifier = pageName + "_" + elementName;
         File savedImage = new File(TAKEN_SCREENSHOT_FOLDER + elementIdentifier + PNG_EXTENSION);
+        System.out.println("Comentario de BZGemerson XD");
         Assert.assertTrue(savedImage.exists());
     }
 
